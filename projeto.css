@@ -1,0 +1,393 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: 'KorolevLight';
+	src: url('oca.fonts/KorolevLight.woff') format('woff');
+}
+body{
+	background:url("assets/modelofundo.png") no-repeat;
+	background-size: cover;
+	/*background-position: center;*/
+	background-attachment: scroll;
+	overflow-x: hidden;
+	/*min-height: 100vh;*/
+}
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 14%;
+	z-index: 99;
+}
+.h1_principal{
+	font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 50px; 
+    color: white;
+    text-align: center;
+    margin-top: 25vw;
+    position: relative;
+    z-index: 10;
+}
+.h2_conteudo{	
+	font-family: 'Comfortaa';
+    font-weight: bold; 
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    /*left: 15vw;*/
+    bottom: -5px;
+    margin-left: 15vw;
+    margin-bottom: 2vw;
+    z-index: 10;
+}
+.h2_atividades{
+	font-family: 'Comfortaa';
+    font-weight: bold; 
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 15vw;
+    z-index: 10;
+}
+
+/*Nesta parte do css esta as configuraçoes do menu*/
+
+.logo {
+	width: 18vw;
+	margin-top: -1vw;	
+	margin-left: 2vw;
+}
+.menu{
+	display: flex;
+	justify-content: center;	
+	position: relative;
+	align-items: center;
+	height: 35vh;
+}
+.menu_link{
+	text-decoration:none;
+	font-family: 'Comfortaa';
+    font-weight: bold; 
+    font-size: 1vw;
+    color: white;
+    min-width: 6.5vw !important;
+	height: 6.5vw;
+	border-radius: 50%;
+	background: linear-gradient(#FB26CA, #FFF82A);
+	margin-left: 2.6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*Nesta parte do css esta as configuraçoes do conteúdo da primeira section.*/
+.section_conteudo{
+	height: 70vh;
+}
+.conteudo{
+	height: 60vh;
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+}
+.p_conteudo{
+	font-family: 'KorolevLight';
+	color: white;
+	height: 400px;
+	width: 400px;
+	font-size: 23px;
+	margin-right: 9.5vw;
+}
+.imagem_conteudo{
+	display: flex;
+	position: relative;
+	margin-right: 5vw;
+	z-index: 10;
+}
+.seta{
+	height: 30px;
+	width: 30px;
+}
+.container_seta{
+	position: absolute;
+	right: 580px;
+}
+.section_conteudo2{
+	height: 70vh;
+}
+.imagem_atividades{
+	display: flex;
+	position: absolute;
+	height: 37%;
+	left: 9%;
+	margin-top: -14%;
+	border-radius: 50%;	
+	z-index: 15;
+}
+.menu_atividades{
+	text-decoration:none;
+	font-family: 'Comfortaa';
+    font-weight: bold; 
+    color: white;
+}
+.conteudo_icone{
+	width: 8vw;
+	height: 6vw;
+	margin: 3.5vw;
+}
+.icones{
+	display: flex;
+	position:relative;
+	justify-content: center;
+	align-items: center;
+	height: 15vw;
+	z-index: 10;
+}
+.p_atividades{
+	display: flex;
+	position:relative;
+	justify-content: center;
+	margin-top: -2vw;
+	z-index: 10;
+}
+/*Nesta parte do css esta as configuraçoes do conteúdo da section parceiros.*/
+
+.h2_parceiros{
+	font-family: 'Comfortaa';
+    font-weight: bold; 
+    font-size: 40px;
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-right: 18vw;
+    margin-top: 20vw;
+   	z-index: 10;
+}
+.icone_parceiros{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 12vw;
+	position: relative;
+	z-index: 10;
+	/*margin-left: 10vw;*/
+}
+.imagem_parceiros{
+	width: 9vw;
+	height: 6.5vw;	
+	margin-right: 15vw;
+	margin-left: -12vw;
+	position: relative;
+	z-index: 10;
+}
+/*Nesta parte do css esta as configuraçoes do conteúdo da section contatos.*/
+.contato{
+	height: 70vh;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin-top: 15vw;
+	position: relative;
+	z-index: 15;
+}
+.h2_contato{
+	font-family: 'Comfortaa';
+    font-weight: bold; 
+    font-size: 40px;
+    color: white;
+    margin-left: 27vw;
+    position: relative;
+	z-index: 15;
+}
+.p_contato{
+	font-family: 'KorolevLight';
+	color: white;
+	font-size: 21px;
+	width: 750px;
+	margin-top: 3vw;
+	margin-left: 27vw;
+	/*height: 350px;*/
+	position: relative;
+	z-index: 15;
+}
+.p_tel{
+	font-family: 'KorolevLight';
+	font-weight: bold;
+	color: yellow;
+	font-size: 25px;
+	margin-top: 3vw;
+	width: 400px;
+	margin-left: 46vw;
+	position: relative;
+	z-index: 15;
+}
+.p_email{
+	font-family: 'KorolevLight';
+	font-weight: bold;
+	color: yellow;
+	font-size: 25px;
+	margin-top: 1vw;
+	width: 400px;
+	margin-left: 46vw;
+	position: relative;
+	z-index: 10;
+}
+.imagem_contato{
+	position: absolute;
+	margin-left: 9.5vw;
+	margin-top: 12.5vw;
+	width: 380px;
+	height: 380px;
+	border-radius: 50%;
+	z-index: 15;
+}
+.logo_vainaweb{
+	width: 5vw;
+	height: 5vw;	
+}
+.bola1_h1{
+	position: absolute;
+	top: 10vw;
+	left: -3vw;
+	width: 21vw;
+	height: 21vw;
+	border-radius: 50%;
+	background: linear-gradient(to top, #FB26CA, #2D11BC);
+	opacity:.8;
+	z-index: 1;
+}
+.bola2_h1{
+	position: absolute;
+	top: -1.5vw;
+	right: -11vw;
+	margin-left: 10vw;
+	width: 33vw;
+	height: 33vw;
+	border-radius: 50%;
+	background: linear-gradient(to left, #00FFCB, #FB26CA);
+	opacity: 0.8;
+}
+.bola3_h1{
+	position: absolute;
+	top: 19vw;
+	margin-left: -3vw;
+	width: 35vw;
+	height: 33vw;
+	border-radius: 50%;
+	background: linear-gradient(to left, #00FFCB, #FB26CA);
+	opacity: 0.7;
+}
+.bola4_h1{
+	position: absolute;
+	top: 27vw;
+	right: -5vw;
+	width: 18vw;
+	height: 18vw;
+	border-radius: 50%;
+	background: linear-gradient(to left, #FFF82A, #FB26CA);
+	opacity: 0.8;
+	z-index: 1;
+}
+.bola_h2{
+	position: absolute;
+	top: 33vw;
+	right: -4.5vw;
+	width: 56vw;
+	height: 54vw;
+	border-radius: 50%;
+	background: linear-gradient(to right, #2D11BC, #B124D2);
+	opacity: 0.8;
+}
+.bola_conteudo {
+	position: absolute;
+	top: 85vw;
+	right: -24vw;
+	width: 66vw;
+	height: 66vw;
+	border-radius: 50%;
+	background: linear-gradient(to right, #00FFCB, #B124D2);
+	opacity: 0.8;
+}
+.bola_atividades {
+	position: absolute;
+	top: 208%;
+	left: -3vw;
+	width: 65vw;
+	height: 60vw;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, #FFF82A, #FB26CA);
+	opacity: 0.9;
+	z-index: 2; 	
+}
+.container_bolaFooter{
+	position: absolute;
+	top: 280%;
+	left: 20%;
+	height: 158vh;
+	overflow: hidden;
+}
+.bola_footer{
+	width: 100vw;
+	height: 100vw;
+	border-radius: 50%;
+	background: linear-gradient(45deg, #FB26CA, #2D11BC);
+	opacity: 0.8; 	
+}
+footer{
+	height: 10vh;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 10;
+}
+.hamburguer{
+	margin: 2px;
+	height: 5px;
+	width: 30px;
+	background: #00FFCB;
+	/*position: relative;*/
+}
+.guardanapo{
+	display: none;
+	position: relative;
+	right: -60px;
+	top: -60px;
+}
+@media (min-width: 300px) and (max-width: 600px)
+{
+	.hamburguer{
+		margin: 2px;
+		height: 5px;
+		cursor: pointer;
+	}
+	.guardanapo{
+		display: block;
+	}
+	.menu_link{
+		min-width: 350px;
+		display: none;	
+	}
+	.logo{
+		/*height: 700px;*/
+		width: 160px;
+		margin-left: -40px;
+	}
+	.h1_principal{
+		font-size: 30px;
+		margin-top: 200px;
+	}
+}
