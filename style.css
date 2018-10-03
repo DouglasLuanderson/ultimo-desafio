@@ -15,15 +15,8 @@ body{
 	overflow-x: hidden;
 	/*min-height: 100vh;*/
 }
-header{
+.main{
 	width: 100%;
-	position: fixed;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 14%;
-	z-index: 99;
 }
 .h1_principal{
 	font-family: 'Comfortaa';
@@ -69,11 +62,15 @@ header{
 	margin-left: 2vw;
 }
 .menu{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 12%;
 	display: flex;
-	justify-content: center;	
-	position: relative;
+	justify-content: flex-end;	
 	align-items: center;
 	height: 35vh;
+	z-index: 99;
 }
 .menu_link{
 	text-decoration:none;
@@ -92,7 +89,9 @@ header{
 }
 /*Nesta parte do css esta as configuraçoes do conteúdo da primeira section.*/
 .section_conteudo{
-	height: 70vh;
+	height: 120vh;
+	display: flex;
+	justify-content: center;
 }
 .conteudo{
 	height: 60vh;
@@ -109,6 +108,8 @@ header{
 	margin-right: 9.5vw;
 }
 .imagem_conteudo{
+	width: 500px;
+	height: 320px;
 	display: flex;
 	position: relative;
 	margin-right: 5vw;
@@ -130,7 +131,7 @@ header{
 	position: absolute;
 	height: 37%;
 	left: 9%;
-	margin-top: -14%;
+	margin-top: -19%;
 	border-radius: 50%;	
 	z-index: 15;
 }
@@ -147,10 +148,10 @@ header{
 }
 .icones{
 	display: flex;
-	position:relative;
+	position: relative;
 	justify-content: center;
 	align-items: center;
-	height: 15vw;
+	height: 15vh;
 	z-index: 10;
 }
 .p_atividades{
@@ -201,6 +202,9 @@ header{
 	position: relative;
 	z-index: 15;
 }
+.imagem_contato{
+	display: none;
+}
 .h2_contato{
 	font-family: 'Comfortaa';
     font-weight: bold; 
@@ -244,6 +248,7 @@ header{
 	z-index: 10;
 }
 .imagem_contato{
+	display: flex;
 	position: absolute;
 	margin-left: 9.5vw;
 	margin-top: 12.5vw;
@@ -258,8 +263,8 @@ header{
 }
 .bola1_h1{
 	position: absolute;
-	top: 10vw;
-	left: -3vw;
+	top: 20%;
+	left: -10%;
 	width: 21vw;
 	height: 21vw;
 	border-radius: 50%;
@@ -270,7 +275,7 @@ header{
 .bola2_h1{
 	position: absolute;
 	top: -1.5vw;
-	right: -11vw;
+	right: -12vw;
 	margin-left: 10vw;
 	width: 33vw;
 	height: 33vw;
@@ -280,10 +285,10 @@ header{
 }
 .bola3_h1{
 	position: absolute;
-	top: 19vw;
-	margin-left: -3vw;
-	width: 35vw;
-	height: 33vw;
+	top: 37%;
+	margin-left: -36%;
+	width: 38vw;
+	height: 36vw;
 	border-radius: 50%;
 	background: linear-gradient(to left, #00FFCB, #FB26CA);
 	opacity: 0.7;
@@ -291,7 +296,7 @@ header{
 .bola4_h1{
 	position: absolute;
 	top: 27vw;
-	right: -5vw;
+	right: -10vw;
 	width: 18vw;
 	height: 18vw;
 	border-radius: 50%;
@@ -301,17 +306,17 @@ header{
 }
 .bola_h2{
 	position: absolute;
-	top: 33vw;
-	right: -4.5vw;
-	width: 56vw;
-	height: 54vw;
+	top: 65%;
+	right: -8vw;
+	width: 59vw;
+	height: 58vw;
 	border-radius: 50%;
 	background: linear-gradient(to right, #2D11BC, #B124D2);
 	opacity: 0.8;
 }
 .bola_conteudo {
 	position: absolute;
-	top: 85vw;
+	top: 170%;
 	right: -24vw;
 	width: 66vw;
 	height: 66vw;
@@ -332,7 +337,7 @@ header{
 }
 .container_bolaFooter{
 	position: absolute;
-	top: 280%;
+	top: 258%;
 	left: 20%;
 	height: 158vh;
 	overflow: hidden;
@@ -344,7 +349,7 @@ header{
 	background: linear-gradient(45deg, #FB26CA, #2D11BC);
 	opacity: 0.8; 	
 }
-footer{
+.footer{
 	height: 10vh;
 	width: 100%;
 	background-color: white;
@@ -367,8 +372,8 @@ footer{
 	right: -60px;
 	top: -60px;
 }
-@media (min-width: 300px) and (max-width: 600px)
-{
+@media (max-width: 1024px)
+	{
 	.hamburguer{
 		margin: 2px;
 		height: 5px;
@@ -376,18 +381,148 @@ footer{
 	}
 	.guardanapo{
 		display: block;
+		right: -60%;
+	}
+	#body{
+		width: 100%;
+	}
+	.main{
+	width: 100%;
+	}
+	.menu{
+		width: 100%;
+		justify-content: center;
+		right: 5%;			
 	}
 	.menu_link{
 		min-width: 350px;
 		display: none;	
 	}
 	.logo{
-		/*height: 700px;*/
-		width: 160px;
-		margin-left: -40px;
+		width: 30%;	
+		position: static;	
+	}
+	.bola1_h1{
+		display: none;
+	}
+	.bola2_h1{
+		display: none;
+	}
+	.bola4_h1{
+		display: none;
+	}
+	.bola3_h1{
+		display: none;
+	}
+	.bola_h2{
+		display: none;
+	}
+	.bola_conteudo{
+		display: none;
 	}
 	.h1_principal{
 		font-size: 30px;
-		margin-top: 200px;
+		margin-top: 100%;
+		margin-left: 4%; 
+		position: relative;
+		text-align: center;
+		min-width: 290px;
+	}
+	.h2_atividades{
+		margin-top: 75%;
+		margin-bottom: 10%;
+	}
+	.h2_parceiros{
+		margin-top: 100%;
+		margin-right: 25%;
+	}
+	.h2_conteudo{
+		margin-bottom: 20%;
+		margin-left: 10%;
+	}
+	.icone_parceiros{
+		margin-top: 50%;
+		flex-direction: column;
+		margin-left: 30%;
+	}
+	.imagem_parceiros{
+		width: 31vw;
+    	height: 30vw;
+    }
+	.section_conteudo{
+		text-align: center;
+		width: 100%;
+	}
+	.imagem_conteudo{
+		width: 85vw;
+    	height: 40vh;
+    	margin-top: auto;
+	}
+	.p_conteudo{
+		width: 90%;
+    	position: absolute;
+    	margin-top: -10%;
+    	margin-left: -5%;
+	}
+	.bola_atividades{
+		display: none;
+	}
+	.icones{
+		height: 40vh;
+		width: 95%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: auto;
+	}
+	.conteudo_icone{
+		min-width: 17vw;
+		min-height: 16vw;
+		/*margin: 3.5vw;*/
+	}
+	.conteudo{
+		height: 65vh;
+    	display: flex;
+    	position: relative;
+    	justify-content: center;
+    	margin-left: 10%;
+	}
+	.imagem_atividades{
+		display: none;
+	}
+	.contato{
+		height: 30vh;
+	}
+	.bola_conteudo{
+		left: 0;
+	}
+	.p_contato{
+		width: 90%;
+    	position: absolute;
+    	margin-top: -140%;
+    	margin-left: 12%;
+	}
+	.p_email{
+		width: 100%;
+		margin-left: 0;
+	}
+	.p_width{
+		width: 100%
+		margin-left:0;
+	}
+	.imagem_contato{
+		display: none;
+	}
+	.bola_footer{
+		width: 100%;
+	}
+	.p_tel{
+		width: 100%;
+		margin-left: 0;
+	}	
+	.footer{
+		display: none;
+	}
+	header{
+		/*width: 100%;*/
 	}
 }
