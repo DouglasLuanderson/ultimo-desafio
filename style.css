@@ -56,11 +56,7 @@ body{
 
 /*Nesta parte do css esta as configuraçoes do menu*/
 
-.logo {
-	width: 18vw;
-	margin-top: -1vw;	
-	margin-left: 2vw;
-}
+
 .menu{
 	position: fixed;
 	width: 100%;
@@ -71,6 +67,11 @@ body{
 	align-items: center;
 	height: 35vh;
 	z-index: 99;
+}
+.logo{
+	width: 18vw;
+	margin-top: -1vw;	
+	margin-left: 2vw;
 }
 .menu_link{
 	text-decoration:none;
@@ -126,6 +127,12 @@ body{
 .section_conteudo2{
 	height: 70vh;
 }
+.menu_atividades{
+	text-decoration:none;
+	font-family: 'Comfortaa';
+    font-weight: bold; 
+    color: white;
+}
 .imagem_atividades{
 	display: flex;
 	position: absolute;
@@ -135,11 +142,12 @@ body{
 	border-radius: 50%;	
 	z-index: 15;
 }
-.menu_atividades{
-	text-decoration:none;
-	font-family: 'Comfortaa';
-    font-weight: bold; 
-    color: white;
+.p_atividades{
+	display: flex;
+	position:relative;
+	justify-content: center;
+	margin-top: -2vw;
+	z-index: 10;
 }
 .conteudo_icone{
 	width: 8vw;
@@ -154,15 +162,11 @@ body{
 	height: 15vh;
 	z-index: 10;
 }
-.p_atividades{
-	display: flex;
-	position:relative;
-	justify-content: center;
-	margin-top: -2vw;
-	z-index: 10;
-}
-/*Nesta parte do css esta as configuraçoes do conteúdo da section parceiros.*/
 
+/*Nesta parte do css esta as configuraçoes do conteúdo da section parceiros.*/
+.section_conteudo4{
+
+}
 .h2_parceiros{
 	font-family: 'Comfortaa';
     font-weight: bold; 
@@ -203,14 +207,22 @@ body{
 	z-index: 15;
 }
 .imagem_contato{
-	display: none;
+	display: flex;
+	position: absolute;
+	margin-left: 9.5vw;
+	margin-top: 12.5vw;
+	width: 380px;
+	height: 380px;
+	border-radius: 50%;
+	z-index: 15;
 }
 .h2_contato{
 	font-family: 'Comfortaa';
     font-weight: bold; 
     font-size: 40px;
     color: white;
-    margin-left: 27vw;
+   	text-align: center;
+   	padding-left: 20px;
     position: relative;
 	z-index: 15;
 }
@@ -224,6 +236,9 @@ body{
 	/*height: 350px;*/
 	position: relative;
 	z-index: 15;
+}
+.p_contato--mobile{
+	display: none;
 }
 .p_tel{
 	font-family: 'KorolevLight';
@@ -247,19 +262,33 @@ body{
 	position: relative;
 	z-index: 10;
 }
-.imagem_contato{
-	display: flex;
-	position: absolute;
-	margin-left: 9.5vw;
-	margin-top: 12.5vw;
-	width: 380px;
-	height: 380px;
-	border-radius: 50%;
-	z-index: 15;
-}
 .logo_vainaweb{
 	width: 5vw;
 	height: 5vw;	
+}
+.container_bolaFooter{
+	position: absolute;
+	top: 258%;
+	left: 20%;
+	height: 158vh;
+	overflow: hidden;
+}
+.bola_footer{
+	width: 100vw;
+	height: 100vw;
+	border-radius: 50%;
+	background: linear-gradient(45deg, #FB26CA, #2D11BC);
+	opacity: 0.8; 	
+}
+.footer{
+	height: 10vh;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 10;
 }
 .bola1_h1{
 	position: absolute;
@@ -335,30 +364,6 @@ body{
 	opacity: 0.9;
 	z-index: 2; 	
 }
-.container_bolaFooter{
-	position: absolute;
-	top: 258%;
-	left: 20%;
-	height: 158vh;
-	overflow: hidden;
-}
-.bola_footer{
-	width: 100vw;
-	height: 100vw;
-	border-radius: 50%;
-	background: linear-gradient(45deg, #FB26CA, #2D11BC);
-	opacity: 0.8; 	
-}
-.footer{
-	height: 10vh;
-	width: 100%;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	z-index: 10;
-}
 .hamburguer{
 	margin: 2px;
 	height: 5px;
@@ -372,8 +377,7 @@ body{
 	right: -60px;
 	top: -60px;
 }
-@media (max-width: 1024px)
-	{
+@media (max-width: 1024px){
 	.hamburguer{
 		margin: 2px;
 		height: 5px;
@@ -387,12 +391,13 @@ body{
 		width: 100%;
 	}
 	.main{
-	width: 100%;
+		width: 100%;
 	}
 	.menu{
 		width: 100%;
 		justify-content: center;
-		right: 5%;			
+		right: 5%;
+		position: absolute;			
 	}
 	.menu_link{
 		min-width: 350px;
@@ -400,7 +405,133 @@ body{
 	}
 	.logo{
 		width: 30%;	
-		position: static;	
+		/*position: static;	*/
+	}
+	.h1_principal{
+		font-size: 30px;
+		margin-top: 100%;
+		margin-left: 4%; 
+		position: relative;
+		text-align: center;
+		min-width: 290px;
+	}
+	.h2_parceiros{
+		margin: 0;
+		font-size: 30px;
+	}
+	.h2_conteudo{
+		margin-bottom: 20%;
+		margin-left: 10%;
+	}
+	.section_conteudo3{
+		padding-bottom: 50px;
+	}
+	.section_conteudo4{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 65px;
+		background:#B124D2;
+	}
+	.icone_parceiros{
+		margin-top: 50%;
+		flex-direction: column;
+		margin-left: 30%;
+	}
+	.imagem_parceiros{
+		width: 31vw;
+    	height: 30vw;
+    }
+    .section_conteudo{
+		text-align: center;
+		width: 100%;
+	}
+	.imagem_conteudo{
+		width: 85vw;
+    	height: auto;
+    	margin-top: auto;
+	}
+	.icones{
+		height: 40vh;
+		width: 95%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: auto;
+	}
+	.conteudo_icone{
+		min-width: 17vw;
+		min-height: 16vw;
+		/*margin: 3.5vw;*/
+	}
+	.conteudo{
+		height: 65vh;
+    	display: flex;
+    	position: relative;
+    	justify-content: center;
+    	align-items: flex-start;
+    	margin-left: 10%;
+	}
+	.p_conteudo{
+		width: 90%;
+    	position: absolute;
+    	margin-top: -10%;
+    	margin-left: -5%;
+	}
+	.bola_conteudo{
+		left: 0;
+	}
+	.h2_atividades{
+		margin-top: 75%;
+		margin-bottom: 10%;
+	}
+	.bola_atividades{
+		display: none;
+	}
+	.imagem_atividades{
+		display: none;
+	}
+	.contato{
+		height: 30vh;
+		background:#B124D2;
+		margin-top: auto;
+		padding-top: 20px;
+	}
+	.p_contato{
+		width: 90%;
+    }
+    .h2_contato{
+    	font-size: 30px;
+    	text-align: center;
+
+    }
+	.p_contato--mobile{
+		display: block;
+		margin-top: auto;
+    	margin-left: auto; 
+     	height: auto; 
+     	padding-bottom: 50px;
+   		
+	}
+	.p_contato--desktop{
+		display: none;
+	}
+	.p_email{
+		width: 100%;
+		margin-left: 0;
+	}
+	.p_width{
+		width: 100%
+		margin-left:0;
+	}
+	.imagem_contato{
+		display: none;
+	}
+	.p_tel{
+		width: 100%;
+		margin-left: 0;
+	}	
+	.footer{
+		display: none;
 	}
 	.bola1_h1{
 		display: none;
@@ -420,109 +551,7 @@ body{
 	.bola_conteudo{
 		display: none;
 	}
-	.h1_principal{
-		font-size: 30px;
-		margin-top: 100%;
-		margin-left: 4%; 
-		position: relative;
-		text-align: center;
-		min-width: 290px;
-	}
-	.h2_atividades{
-		margin-top: 75%;
-		margin-bottom: 10%;
-	}
-	.h2_parceiros{
-		margin-top: 100%;
-		margin-right: 25%;
-	}
-	.h2_conteudo{
-		margin-bottom: 20%;
-		margin-left: 10%;
-	}
-	.icone_parceiros{
-		margin-top: 50%;
-		flex-direction: column;
-		margin-left: 30%;
-	}
-	.imagem_parceiros{
-		width: 31vw;
-    	height: 30vw;
-    }
-	.section_conteudo{
-		text-align: center;
-		width: 100%;
-	}
-	.imagem_conteudo{
-		width: 85vw;
-    	height: 40vh;
-    	margin-top: auto;
-	}
-	.p_conteudo{
-		width: 90%;
-    	position: absolute;
-    	margin-top: -10%;
-    	margin-left: -5%;
-	}
-	.bola_atividades{
-		display: none;
-	}
-	.icones{
-		height: 40vh;
-		width: 95%;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		margin: auto;
-	}
-	.conteudo_icone{
-		min-width: 17vw;
-		min-height: 16vw;
-		/*margin: 3.5vw;*/
-	}
-	.conteudo{
-		height: 65vh;
-    	display: flex;
-    	position: relative;
-    	justify-content: center;
-    	margin-left: 10%;
-	}
-	.imagem_atividades{
-		display: none;
-	}
-	.contato{
-		height: 30vh;
-	}
-	.bola_conteudo{
-		left: 0;
-	}
-	.p_contato{
-		width: 90%;
-    	position: absolute;
-    	margin-top: -140%;
-    	margin-left: 12%;
-	}
-	.p_email{
-		width: 100%;
-		margin-left: 0;
-	}
-	.p_width{
-		width: 100%
-		margin-left:0;
-	}
-	.imagem_contato{
-		display: none;
-	}
 	.bola_footer{
 		width: 100%;
-	}
-	.p_tel{
-		width: 100%;
-		margin-left: 0;
-	}	
-	.footer{
-		display: none;
-	}
-	header{
-		/*width: 100%;*/
 	}
 }
