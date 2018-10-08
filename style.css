@@ -124,7 +124,7 @@ body{
 	position: absolute;
 	right: 580px;
 }
-.section_conteudo2{
+#section_conteudo2{
 	height: 70vh;
 }
 .menu_atividades{
@@ -133,7 +133,7 @@ body{
     font-weight: bold; 
     color: white;
 }
-.imagem_atividades{
+#imagem_atividades{
 	display: flex;
 	position: absolute;
 	height: 37%;
@@ -216,7 +216,7 @@ body{
 	border-radius: 50%;
 	z-index: 15;
 }
-.h2_contato{
+#h2_contato{
 	font-family: 'Comfortaa';
     font-weight: bold; 
     font-size: 40px;
@@ -487,7 +487,7 @@ body{
 	.bola_atividades{
 		display: none;
 	}
-	.imagem_atividades{
+	#imagem_atividades{
 		display: none;
 	}
 	.contato{
@@ -502,7 +502,6 @@ body{
     .h2_contato{
     	font-size: 30px;
     	text-align: center;
-
     }
 	.p_contato--mobile{
 		display: block;
@@ -510,14 +509,17 @@ body{
     	margin-left: auto; 
      	height: auto; 
      	padding-bottom: 50px;
-   		
-	}
+   	}
 	.p_contato--desktop{
 		display: none;
 	}
-	.p_email{
+	.p_email , .p_tel{
 		width: 100%;
 		margin-left: 0;
+		font-size: 20px;
+		text-align: center;
+		color: white;
+		padding-top: 7px;
 	}
 	.p_width{
 		width: 100%
@@ -526,10 +528,6 @@ body{
 	.imagem_contato{
 		display: none;
 	}
-	.p_tel{
-		width: 100%;
-		margin-left: 0;
-	}	
 	.footer{
 		display: none;
 	}
